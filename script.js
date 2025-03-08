@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function createFlower() {
         const flower = document.createElement('div');
         flower.classList.add('flower');
+        flower.textContent = '🌸';
         flower.style.left = Math.random() * window.innerWidth + 'px';
         flower.style.animationDuration = (Math.random() * 3 + 2) + 's'; // 2s - 5s
         flowerContainer.appendChild(flower);
@@ -18,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setInterval(createFlower, 500);
 });
+
 
 
 
